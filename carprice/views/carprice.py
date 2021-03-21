@@ -131,9 +131,13 @@ class Carprice(View):
         x = np.reshape(test,(1,-1))
         print(x)
         
-
-        dbfile = open(r'D:\Sourav\Projects\Car Price Detection\carprice\models\finalModel', 'rb')      
-        model = joblib.load(dbfile)
+        import os
+        abspath = pathlib.Path('carprice/models/finalModel').absolute()
+        print(abspath)
+        with open(str(abspath),mode='rb') as f:
+            model = joblib.load(f)
+        # dbfile = open(r'D:\Sourav\Projects\Car Price Detection\carprice\models\finalModel','rb')      
+        # model = joblib.load(dbfile)
         price = model.predict(x)[0]
         price = round(price,2)
         data = {
