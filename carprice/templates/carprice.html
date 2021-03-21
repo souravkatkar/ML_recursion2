@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+
+</head>
+
+<body>
+    <div>
+        <div class="container m-2">
+
+            <div class="row m-4">
+                <div class="col-sm">
+                    <label for="carbrand">Car Brand</label>
+                    <select name="carbrand" class="form-select m-1" form="carform">
+        {% if carbrand %}
+        <option selected>{{carbrand}}</option>
+        {% endif %}      
+        <option value="toyota">toyota</option>
+        <option value="nissan">nissan</option>
+        <option value="mazda">mazda</option>
+        <option value="honda">honda</option>
+        <option value="mistubishi">mitsubishi</option>
+        <option value="volkswagen">volkswagen</option>
+        <option value="subaru">subaru</option>
+        <option value="volvo">volvo</option>
+        <option value="peugeot">peugeot</option>
+        <option value="dodge">dodge</option>
+        <option value="bmw">bmw</option>
+        <option value="buick">buick</option>
+        <option value="audi">audi</option>
+        <option value="plymouth">plymouth</option>
+        <option value="saab">saab</option>
+        <option value="porsche">porsche</option>
+        <option value="isuzu">isuzu</option>
+        <option value="alfa-romeo">alfa-romeo</option>
+        <option value="jaguar">jaguar</option>
+        <option value="chevrolet">chevrolet</option>
+        <option value="renault">renault</option>
+        <option value="mercury">mercury</option>
+
+
+      </select>
+                </div>
+
+
+                <div class="col-sm">
+                    <label for="fueltype">Fuel Type</label>
+                    <select name="fueltype" class="form-select m-1" form="carform">
+                    {% if fueltype %}
+        <option selected>{{fueltype}}</option>
+        {% endif %}                      
+        <option value="gas">gas</option>
+        <option value="diesel">diesel</option>
+
+      </select>
+
+                </div>
+
+
+
+                <div class="col-sm">
+                    <label for="aspiration">Aspiration</label>
+                    <select name="aspiration" class="form-select m-1" form="carform">
+                    {% if aspiration %}
+        <option selected>{{aspiration}}</option>
+        {% endif %}  
+            <option value="std">std</option>
+        <option value="turbo">turbo</option>
+
+
+        
+
+            </select>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <label for="doornumber">Door Number</label>
+                    <select name="doornumber" class="form-select m-1" form="carform">
+                    {% if doornumber %}
+        <option selected>{{doornumber}}</option>
+        {% endif %}  
+        
+        <option value="two">two</option>
+        <option value="four">four</option>
+
+    </select>
+                </div>
+                <div class="col-sm">
+                    <label for="carbody">Car Body</label>
+                    <select name="carbody" class="form-select m-1" form="carform">
+                    {% if carbody %}
+        <option selected>{{carbody}}</option>
+        {% endif %}  
+        
+        <option value="sedan">sedan</option>
+        <option value="hatchback">hatchback</option>
+        <option value="wagon">wagon</option>
+        <option value="hardtop">hardtop</option>
+        <option value="convertible">convertible</option>
+        
+
+    </select>
+                </div>
+
+
+                <div class="col-sm">
+                    <label for="fueltype">Drive Wheel</label>
+                    <select name="drivewheel" class="form-select m-1" form="carform">
+                    {% if drivewheel %}
+                    <option selected>{{drivewheel}}</option>
+                    {% endif %}  
+        <option value="fwd">fwd</option>
+        <option value="rwd">rwd</option>
+        <option value="4wd">4wd</option>
+
+    </select>
+                </div>
+            </div>
+
+            <div class="row m-4">
+                <div class="col-sm">
+                    <label for="enginelocation">Engine Location</label>
+
+
+                    <select name="enginelocation" class="form-select m-1" form="carform">
+                    {% if enginelocation %}
+        <option selected>{{enginelocation}}</option>
+        {% endif %}  
+        
+        <option value="front">front</option>
+        <option value="rear">rear</option>
+
+    </select>
+                </div>
+
+                <div class="col-sm">
+                    <label for="enginetype">Engine Type</label>
+                    <select name="enginetype" class="form-select m-1" form="carform">
+
+                    {% if enginetype %}
+        <option selected>{{enginetype}}</option>
+        {% endif %}  
+        
+        <option value="ohc">ohc</option>
+        <option value="ohcf">ohcf</option>
+        <option value="ohcv">ohcv</option>
+        <option value="dohc">dohc</option>
+        <option value="l">l</option>
+        <option value="rotor">rotor</option>
+        <option value="dohcv">dohcv</option>
+        
+        
+        
+
+    </select>
+                </div>
+
+
+                <div class="col-sm">
+                    <label for="cylindernumber">Cylinder Number</label>
+                    <select name="cylindernumber" class="form-select m-1" form="carform">
+                    {% if cylindernumber %}
+        <option selected>{{cylindernumber}}</option>
+        {% endif %}  
+        
+        <option value="two">two</option>
+        <option value="three">three</option>
+        <option value="four">four</option>
+        <option value="five">five</option>
+        <option value="six">six</option>
+        <option value="eight">eight</option>
+        <option value="twelve">twelve</option>
+
+
+    </select>
+                </div>
+            </div>
+
+            <div class="row m-4">
+                <div class="col-4">
+                    <label for="fuelsystem">Fuel System</label>
+
+                    <select name="fuelsystem" class="form-select m-1" form="carform">
+
+                    {% if fuelsystem %}
+                    <option selected>{{fuelsystem}}</option>
+                    {% endif %}  
+        
+        <option value="mpfi">mpfi</option>
+        <option value="2bbl">2bbl</option>
+        <option value="idi">idi</option>
+        <option value="1bbl">1bbl</option>
+        <option value="spdi">spdi</option>
+        <option value="4bbl">4bbl</option>
+        <option value="mfi">mfi</option>
+        <option value="spfi">spfi</option>
+
+
+    </select>
+                </div>
+                <div class="col-4">
+                    <label for="symboling">Symboling</label>
+
+                    <select name="symboling" class="form-select m-1" form="carform">
+                    {% if symboling %}
+        <option selected>{{symboling}}</option>
+        {% endif %}  
+        
+        <option value="-2">-2</option>
+        <option value="-1">-1</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+
+    </select>
+                </div>
+            </div>
+
+
+            <form action="/carprice" method="POST" id="carform">
+                {% csrf_token %}
+
+                <div class="row m-2">
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="wheelbase" value="{{wheelbase}}" type="number" step="0.01" placeholder="Wheelbase">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="carlength" value="{{carlength}}" type="number" step="0.01" placeholder="Car Length">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="carwidth" value="{{carwidth}}" type="number" step="0.01" placeholder="Car Width">
+                    </div>
+                </div>
+
+                <div class="row m-2">
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="carheight" value="{{carheight}}" type="number" step="0.01" placeholder="Car Height">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="curbweight" value="{{curbweight}}" type="number" placeholder="Curb Weight">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="enginesize" value="{{enginesize}}" type="number" placeholder="Engine Size">
+
+                    </div>
+                </div>
+
+
+                <div class="row m-2">
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="boreratio" value="{{boreratio}}" type="number" step="0.01" placeholder="Boreratio">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="stroke" value="{{stroke}}" type="number" step="0.01" placeholder="Stroke">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="compression" value="{{compression}}" type="number" step="0.01" placeholder="Compression">
+                    </div>
+                </div>
+
+                <div class="row m-2">
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="horsepower" value="{{horsepower}}" type="number" placeholder="Horsepower">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="peakrpm" value="{{peakrpm}}" type="number" placeholder="PeakRpm">
+                    </div>
+                    <div class="col-sm">
+                        <input required class="form-control col-3 m-1" name="highwaympg" value="{{highwaympg}}" type="number" placeholder="highwaympg">
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary m-4" value="Predict Car Price"><br>
+                <div class="row mx-2">
+
+                    <a>
+                        <h3>Predicted Car price is : {{price}}</h3>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    </div>
+    </div>
+
+</body>
+
+</html>
